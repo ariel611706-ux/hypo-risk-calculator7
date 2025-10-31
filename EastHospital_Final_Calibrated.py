@@ -39,7 +39,7 @@ def logistic(x): return 1/(1+np.exp(-x))
 
 st.sidebar.header(TXT[lang]["inputs"])
 diagnosis = st.sidebar.selectbox(TXT[lang]["dx"],["Gallbladder/pancreatic disease (reference)","Colonic lesion","Gastric neoplasm","Esophageal lesion","Other diseases"])
-dbp_cat = st.sidebar.selectbox(TXT[lang]["dbp"],["< 90 mmHg (reference)","90–100 mmHg","101–110 mmHg","> 110 mmHg"])
+dbp_cat = st.sidebar.selectbox(TXT[lang]["dbp"],["60-90 mmHg (reference)","90–100 mmHg","101–110 mmHg","> 110 mmHg"])
 glucose = st.sidebar.number_input(TXT[lang]["glucose"],0.0,40.0,GLU_MEAN,0.1)
 bun = st.sidebar.number_input(TXT[lang]["bun"],0.0,40.0,BUN_MEAN,0.1)
 hb = st.sidebar.number_input(TXT[lang]["hb"],60.0,200.0,HB_MEAN,1.0)
